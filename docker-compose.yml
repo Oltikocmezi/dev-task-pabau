@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 services:
   mysql:
@@ -9,9 +9,9 @@ services:
       MYSQL_USER: my_user
       MYSQL_PASSWORD: my_password
     ports:
-      - "3306:3306"
+      - "3307:3306"
     volumes:
-        - ./backend/scripts:/docker-entrypoint-initdb.d
+      - ./backend/scripts:/docker-entrypoint-initdb.d
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
